@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Blog</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
         <div class="content">
           <div class="post-header">
             <p>02 de jul, 2021</p>
-            <span class="image-name">post-1.jpg</span>
+            <i class="far fa-heart"></i>
           </div>
           <h1 class="post-title">Agora é oficial: o windows 11 está vindo</h1>
           <p class="post-content">
@@ -42,9 +43,23 @@
         <div class="content">
           <div class="post-header">
             <p>02 de jul, 2021</p>
-            <span class="image-name">post-1.jpg</span>
+            <i class="far fa-heart"></i>
           </div>
           <h1 class="post-title">Tim Berners-Lee vai leiloar código-fonte da web</h1>
+          <p class="post-content">
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc eu aliquam consectetur, nisl nunc aliquet nunc, eget consectetur nisl nunc euismod nunc. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quas a aliquam eveniet atque suscipit voluptatibus voluptate. Eligendi, pariatur fuga possimus sint atque illum?
+          </p>
+        </div>
+      </div>
+
+      <div class="posts">        
+        <div class="content">
+          <div class="post-header">
+            <p>02 de jul, 2021</p>
+            <i class="far fa-heart"></i> 
+            
+          </div>
+          <h1 class="post-title">Tem Firefox novo no pedaço e você vai querer migrar</h1>
           <p class="post-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc eu.
           </p>
@@ -55,16 +70,30 @@
         <div class="content">
           <div class="post-header">
             <p>02 de jul, 2021</p>
-            <span class="image-name">post-1.jpg</span>
+            <i class="far fa-heart"></i>
           </div>
-          <h1 class="post-title">Agora é oficial: o windows 11 está vindo</h1>
+          <h1 class="post-title">John McAfee, criador do antivírus, morre</h1>
           <p class="post-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc eu aliquam consectetur, nisl nunc aliquet nunc, eget consectetur nisl nunc euismod nunc.
+            lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nunc eu aliquam consectetur, nisl nunc aliquet nunc, eget consectetur nisl nunc euismod nunc. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quas a aliquam eveniet atque suscipit voluptatibus voluptate. Eligendi, pariatur fuga possimus sint atque illum?            
           </p>
         </div>
       </div>
     </section>
   </main>
   
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.posts', { delay: 200 });
+        ScrollReveal().reveal('.post-header', { delay: 400 });
+        ScrollReveal().reveal('.post-title', { delay: 500 });
+        ScrollReveal().reveal('.post-content', { delay: 600 });
+</script>
 </body>
 </html>

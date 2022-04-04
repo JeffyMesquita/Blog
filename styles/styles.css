@@ -4,14 +4,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #ffffff;
+  --white-50: #ffffff80;
+  --white-20: #ffffff33;
+
+  --title: #1a202c;
+  --text: #717171;
+
+  --background: #f3f5f7;
+
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: boder-box;
 }
 
 header {
-  background: linear-gradient(to right, #574AE8, #3EA1DB);
+  background: var(--linear);
   height: 250px;
   display: flex;
   align-items: center;
@@ -34,7 +49,7 @@ header {
 
 .link {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   font-size: 24px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
@@ -46,12 +61,13 @@ header {
   margin-top: 73px;
   max-width: 900px;
   border-radius: 5px;
-  background: #FFFFFF33;    
+  border: none;
+  background: var(--white-20);
 }
 
 .search::placeholder {
   padding-left: 64px;
-  color: #FFFFFF80;
+  color: var(--white-50);
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
@@ -63,16 +79,15 @@ main {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #F3F5F7;  
+  background-color: var(--background);
   align-items: center;
 }
 
-section {  
+section {
   display: flex;
   flex-direction: column;
-  width: 900px;  
+  max-width: 900px;
   align-items: center;
-  
 }
 
 #first-post {
@@ -80,7 +95,7 @@ section {
 }
 
 .content {
-  margin: 24px;  
+  margin: 24px;
 }
 
 .post-header {
@@ -96,14 +111,15 @@ section {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
-  color: #717171;
+  color: var(--text);
 }
 
 .post-title {
+  line-height: 32px;
   font-size: 26px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
-  color: #1A202C;
+  color: var(--title);
   margin-bottom: 8px;
 }
 
@@ -111,15 +127,56 @@ section {
   font-size: 18px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
-  color: #717171;
+  color: var(--text);
 }
 
 .posts {
+  height: auto;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
   margin-bottom: 50px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 960px) {
+  section {
+    margin: 0 41px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 200px;
+  }
+
+  section {
+    margin: 0 24px;
+  }
+
+  .header {
+    margin: auto 24px;
+  }
+
+  .search {
+    margin-top: 41px;
+  }
+
+  .post-header > p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .post-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .posts-content {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
