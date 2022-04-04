@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background: linear-gradient(to right, #574AE8, #3EA1DB);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  margin: auto 41px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.search {
+  width: 100%;
+  height: 65px;
+  margin-top: 73px;
+  max-width: 900px;
+  border-radius: 5px;
+  background: #FFFFFF33;    
+}
+
+.search::placeholder {
+  padding-left: 64px;
+  color: #FFFFFF80;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #F3F5F7;  
+  align-items: center;
+}
+
+section {  
+  display: flex;
+  flex-direction: column;
+  width: 900px;  
+  align-items: center;
+  
+}
+
+#first-post {
+  margin-top: 100px;
+}
+
+.content {
+  margin: 24px;  
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.post-header > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #717171;
+}
+
+.post-title {
+  font-size: 26px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #1A202C;
+  margin-bottom: 8px;
+}
+
+.post-content {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #717171;
+}
+
+.posts {
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
