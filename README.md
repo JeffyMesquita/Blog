@@ -48,6 +48,9 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## :globe_with_meridians: Deploy on Vercel
+[Blog](https://blog-sepia-sigma.vercel.app)
+
 ---
 
 Made with :heartpulse: by [jeffymesquita](...) 👋
